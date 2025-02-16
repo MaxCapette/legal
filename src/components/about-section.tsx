@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 export function AboutSection() {
   return (
@@ -5,20 +6,20 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Plus de 30 ans d'expertise</h2>
+            <h2 className="text-3xl font-bold mb-6">Plus de 30 ans d&apos;expertise</h2>
             <div className="space-y-4 text-gray-600">
               <p>
-                Établie depuis 1990, l'entreprise LEGAL s'est forgée une solide réputation dans le domaine de la
-                plâtrerie, des cloisons sèches et de l'isolation. Notre expertise s'étend aussi bien aux marchés publics
-                qu'aux projets privés.
+                Établie depuis 1990, l&apos;entreprise LEGAL s&apos;est forgée une solide réputation dans le domaine de la
+                plâtrerie, des cloisons sèches et de l&apos;isolation. Notre expertise s&apos;étend aussi bien aux marchés publics
+                qu&apos;aux projets privés.
               </p>
               <p>
-                Suite à la reprise par l'EURL LEGAL-SCHREINER en novembre 2020, nous poursuivons notre engagement
-                d'excellence avec la même énergie et le même savoir-faire qui ont fait notre renommée.
+                Suite à la reprise par l&apos;EURL LEGAL-SCHREINER en novembre 2020, nous poursuivons notre engagement
+                d&apos;excellence avec la même énergie et le même savoir-faire qui ont fait notre renommée.
               </p>
               <p>
                 Notre équipe de professionnels qualifiés met son expertise au service de vos projets, garantissant une
-                réalisation dans les règles de l'art et un respect strict des délais.
+                réalisation dans les règles de l&apos;art et un respect strict des délais.
               </p>
             </div>
           </div>
@@ -26,8 +27,7 @@ export function AboutSection() {
             <img
               src="/images/homephoto.png"
               alt="Réalisation intérieure"
-              fill
-              className="object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

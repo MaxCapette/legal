@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import Slider from "react-slick"
@@ -212,8 +213,7 @@ export function PortfolioSection() {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    fill
-                    className="object-cover rounded-lg"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <h3 className="text-xl font-semibold">{image.title}</h3>

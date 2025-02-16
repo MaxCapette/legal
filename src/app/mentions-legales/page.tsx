@@ -11,7 +11,7 @@ export default function LegalPage() {
               <div>
                 <h3 className="text-lg font-medium mb-2">Éditeur du site</h3>
                 <p>EURL LEGAL SCHREINER</p>
-                <p>14 Rue de l'Abbé Orain</p>
+                <p>14 Rue de l&apos;Abbé Orain</p>
                 <p>44590 DERVAL</p>
                 <p>SIRET : 888 404 696 00013</p>
               </div>
@@ -21,8 +21,8 @@ export default function LegalPage() {
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Hébergeur</h3>
-                <p>[Nom de l'hébergeur]</p>
-                <p>[Adresse de l'hébergeur]</p>
+                <p>[Nom de l&apos;hébergeur]</p>
+                <p>[Adresse de l&apos;hébergeur]</p>
               </div>
             </div>
           </section>
@@ -66,14 +66,14 @@ export default function LegalPage() {
             <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
             <p>
               Ce site utilise des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire ou
-              de traçage n'est utilisé.
+              de traçage n&apos;est utilisé.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">Propriété intellectuelle</h2>
             <p>
-              L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la
+              L&apos;ensemble de ce site relève de la législation française et internationale sur le droit d&apos;auteur et la
               propriété intellectuelle. Tous les droits de reproduction sont réservés.
             </p>
           </section>

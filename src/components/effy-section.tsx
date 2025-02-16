@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card, CardContent } from "@/components/ui/card"
 
 
@@ -19,7 +20,7 @@ export function EffySection() {
                 financières disponibles.
               </p>
               <p className="text-gray-700 leading-relaxed mt-4">
-                Grâce à cette collaboration, nous facilitons l'accès aux subventions et primes 
+                Grâce à cette collaboration, nous facilitons l&apos;accès aux subventions et primes 
                 permettant de financer des travaux de rénovation énergétique, en assurant une 
                 prise en charge complète des démarches administratives.
               </p>

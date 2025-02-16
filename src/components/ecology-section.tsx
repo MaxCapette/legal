@@ -7,8 +7,8 @@ export function EcologySection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Notre Engagement Environnemental</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            LEGAL s'engage activement dans une démarche écologique et durable, avec des actions concrètes pour préserver
-            l'environnement.
+            LEGAL s&apos;engage activement dans une démarche écologique et durable, avec des actions concrètes pour préserver
+            l&apos;environnement.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -17,7 +17,7 @@ export function EcologySection() {
             <h3 className="text-xl font-semibold mb-4">Matériaux Écologiques</h3>
             <ul className="space-y-2 text-gray-600">
               <li>Utilisation de matériaux biosourcés</li>
-              <li>Solutions d'isolation naturelles</li>
+              <li>Solutions d&apos;isolation naturelles</li>
               <li>Produits à faible impact environnemental</li>
             </ul>
           </div>

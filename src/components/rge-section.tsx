@@ -14,8 +14,8 @@ export function RGESection() {
             </div>
             <h2 className="text-3xl font-bold mb-6">Certification RGE Qualibat</h2>
             <p className="text-xl text-gray-600 mb-8">
-              Notre certification RGE (Reconnu Garant de l'Environnement) vous garantit un travail de qualité et vous
-              permet d'accéder aux aides de l'État pour vos travaux de rénovation énergétique.
+              Notre certification RGE (Reconnu Garant de l&apos;Environnement) vous garantit un travail de qualité et vous
+              permet d&apos;accéder aux aides de l&apos;État pour vos travaux de rénovation énergétique.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Card>
@@ -31,7 +31,7 @@ export function RGESection() {
                 <CardContent className="pt-6">
                   <PiggyBank className="h-8 w-8 text-blue-600 mb-4" />
                   <h3 className="font-semibold mb-2">Aides financières</h3>
-                  <p className="text-gray-600 text-sm">Accédez aux aides de l'État : MaPrimeRénov', CEE, etc.</p>
+                  <p className="text-gray-600 text-sm">Accédez aux aides de l&apos;État : MaPrimeRénov&apos;, CEE, etc.</p>
                 </CardContent>
               </Card>
             </div>
