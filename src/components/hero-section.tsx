@@ -15,7 +15,7 @@ export function HeroSection() {
           <img
             src="/images/Logo2.png"
             alt="LEGAL Logo"
-            className="bg-white p-4 rounded-lg w-[400px] h-[400px]"
+            className="bg-white p-4 rounded-lg w-[400px] aspect-square"
           />
         </div>
       </div>
