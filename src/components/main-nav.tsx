@@ -6,9 +6,11 @@ import { useEffect, useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
+import { useSheetState } from "@/components/ui/sheet"
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -83,7 +85,7 @@ export function MainNav() {
 
           {/* Mobile Navigation */}
           <div className="lg:hidden">
-            <Sheet>
+            <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
@@ -100,7 +102,7 @@ export function MainNav() {
                       key={item.section}
                       onClick={() => {
                         scrollToSection(item.section)
-                        document.querySelector('[data-state="open"]')?.setAttribute("data-state", "closed")
+                        setOpen(false)
                       }}
                       className="text-left text-lg font-medium text-gray-600 hover:text-[var(--orange)]"
                     >
