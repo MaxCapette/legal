@@ -1,7 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 
 export function HeroSection() {
   return (

@@ -6,7 +6,6 @@ import { useEffect, useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
-import { useSheetState } from "@/components/ui/sheet"
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = useState(false)
