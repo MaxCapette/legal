@@ -1,0 +1,54 @@
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import { PiggyBank, Shield } from "lucide-react"
+
+export function RGESection() {
+  return (
+    <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              Entreprise certifiée
+            </div>
+            <h2 className="text-3xl font-bold mb-6">Certification RGE Qualibat</h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Notre certification RGE (Reconnu Garant de l'Environnement) vous garantit un travail de qualité et vous
+              permet d'accéder aux aides de l'État pour vos travaux de rénovation énergétique.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <Card>
+                <CardContent className="pt-6">
+                  <Shield className="h-8 w-8 text-blue-600 mb-4" />
+                  <h3 className="font-semibold mb-2">Qualité garantie</h3>
+                  <p className="text-gray-600 text-sm">
+                    Des audits réguliers valident notre expertise et notre savoir-faire
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6">
+                  <PiggyBank className="h-8 w-8 text-blue-600 mb-4" />
+                  <h3 className="font-semibold mb-2">Aides financières</h3>
+                  <p className="text-gray-600 text-sm">Accédez aux aides de l'État : MaPrimeRénov', CEE, etc.</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="relative h-[400px] flex items-center justify-center">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rgequalibat-cZcUeapiKeWifbMXpeUEgFyIgrkDHv.png"
+                alt="Certification RGE Qualibat"
+                width={400}
+                height={400}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
