@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="flex items-center gap-6">
           <img
-            src="/images/logo2.png"
+            src="/images/Logo2.png"
             alt="LEGAL Logo"
             className="bg-white p-4 rounded-lg w-[400px] h-[400px]"
           />

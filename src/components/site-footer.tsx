@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <img
-              src="/images/logo2.png"
+              src="/images/Logo2.png"
               alt="LEGAL Logo"
               className="bg-white p-4 rounded-lg mb-4 w-[150px] h-[150px] object-contain"
             />
