@@ -10,19 +10,19 @@ export function OrganizationSection() {
             <h3 className="text-xl font-semibold mb-6">Une équipe complète</h3>
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)]" />
                 <span>1 Dirigeant expérimenté</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)]" />
                 <span>1 Secrétaire comptable</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)]" />
                 <span>1 Métreur / conducteur de travaux</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)]" />
                 <span>6 Ouvriers qualifiés</span>
               </li>
             </ul>
@@ -31,19 +31,19 @@ export function OrganizationSection() {
             <h3 className="text-xl font-semibold mb-6">Suivi de chantier</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500 mt-1" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)] mt-1" />
                 <span>Contrôle rigoureux des supports avant intervention</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500 mt-1" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)] mt-1" />
                 <span>Autocontrôles réguliers pendant le chantier</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500 mt-1" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)] mt-1" />
                 <span>Vérification finale approfondie</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-orange-500 mt-1" />
+                <CheckCircle2 className="h-5 w-5 text-[var(--orange)] mt-1" />
                 <span>Outils numériques pour un suivi en temps réel</span>
               </li>
             </ul>

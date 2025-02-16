@@ -5,7 +5,6 @@ import { useEffect, useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
-import Image from "next/image"
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -56,12 +55,12 @@ export function MainNav() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-16%20at%2010.14.55.jpeg-QYgmPYfnHq3zRQ0gE1Gp3uJJAhU7HQ.png"
+            <img
+              src="/images/logo.png" 
               alt="LEGAL Logo"
-              width={50}
-              height={50}
-              className={cn("transition-all duration-300", isScrolled ? "bg-transparent" : "bg-white rounded-lg p-1")}
+              width={80}
+              height={80}
+              className={cn("transition-all duration-300")}
             />
           </div>
 
@@ -72,7 +71,7 @@ export function MainNav() {
                 key={item.section}
                 onClick={() => scrollToSection(item.section)}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-orange-500",
+                  "text-sm font-medium transition-colors hover:text-[var(--orange)]",
                   isScrolled ? "text-gray-600" : "text-white",
                 )}
               >
@@ -102,7 +101,7 @@ export function MainNav() {
                         scrollToSection(item.section)
                         document.querySelector('[data-state="open"]')?.setAttribute("data-state", "closed")
                       }}
-                      className="text-left text-lg font-medium text-gray-600 hover:text-orange-500"
+                      className="text-left text-lg font-medium text-gray-600 hover:text-[var(--orange)]"
                     >
                       {item.label}
                     </button>
@@ -119,7 +118,7 @@ export function MainNav() {
               className={cn(
                 "transition-colors",
                 isScrolled
-                  ? "bg-orange-500 hover:bg-orange-600 text-white"
+                  ? "bg-[var(--orange)] hover:bg-orange-600 text-white"
                   : "bg-white/10 hover:bg-white/20 text-white",
               )}
             >

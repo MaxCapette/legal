@@ -11,7 +11,7 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
-
+import { EffySection } from "@/components/effy-section"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -23,6 +23,7 @@ export default function Home() {
       <MarketsSection />
       <OrganizationSection />
       <EquipmentSection />
+      <EffySection />
       <EcologySection />
       <TestimonialsSection />
       <PortfolioSection />

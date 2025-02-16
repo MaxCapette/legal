@@ -1,14 +1,13 @@
-import Image from "next/image"
 import Link from "next/link"
 
 export function SiteFooter() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[var(--blueGray)] text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-16%20at%2010.14.55.jpeg-QYgmPYfnHq3zRQ0gE1Gp3uJJAhU7HQ.png"
+            <img
+              src="/images/logo2.png"
               alt="LEGAL Logo"
               width={150}
               height={150}

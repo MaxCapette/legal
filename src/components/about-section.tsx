@@ -1,4 +1,3 @@
-import Image from "next/image"
 
 export function AboutSection() {
   return (
@@ -24,8 +23,8 @@ export function AboutSection() {
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20230622_100217.JPG-XLOSKTbEjHSGMwpnaJdVKTFf5449zi.jpeg"
+            <img
+              src="/images/homephoto.png"
               alt="Réalisation intérieure"
               fill
               className="object-cover"

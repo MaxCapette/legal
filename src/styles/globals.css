@@ -34,6 +34,9 @@
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
+
+    --orange: #fcb139;
+    --blueGray: #53636c;
   }
 }
 
@@ -46,3 +49,19 @@
   }
 }
 
+.portfolio-slider .slick-prev,
+.portfolio-slider .slick-next {
+  z-index: 10;
+}
+
+.portfolio-slider .slick-prev {
+  left: -25px;
+}
+
+.portfolio-slider .slick-next {
+  right: -25px;
+}
+
+.portfolio-slider .slick-dots {
+  bottom: -40px;
+}

@@ -10,7 +10,7 @@ export function ContactSection() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <Phone className="h-6 w-6 text-orange-500" />
+                <Phone className="h-6 w-6 text-[var(--orange)]" />
                 <div>
                   <p className="font-semibold">Téléphone</p>
                   <p>02 99 43 93 27</p>
@@ -18,14 +18,14 @@ export function ContactSection() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Mail className="h-6 w-6 text-orange-500" />
+                <Mail className="h-6 w-6 text-[var(--orange)]" />
                 <div>
                   <p className="font-semibold">Email</p>
                   <p>secretariat@legal-plaquiste.fr</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <MapPin className="h-6 w-6 text-orange-500" />
+                <MapPin className="h-6 w-6 text-[var(--orange)]" />
                 <div>
                   <p className="font-semibold">Adresse</p>
                   <p>14 Rue de l'Abbé Orain</p>
@@ -33,7 +33,7 @@ export function ContactSection() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Users className="h-6 w-6 text-orange-500" />
+                <Users className="h-6 w-6 text-[var(--orange)]" />
                 <div>
                   <p className="font-semibold">SIRET</p>
                   <p>888 404 696 00013</p>
@@ -46,7 +46,7 @@ export function ContactSection() {
                 Contactez-nous pour toute demande de devis ou d'information. Notre équipe vous répondra dans les plus
                 brefs délais.
               </p>
-              <Button className="w-full bg-orange-500 hover:bg-orange-600">Demander un devis</Button>
+              <Button className="w-full bg-[var(--orange)] hover:bg-orange-600">Demander un devis</Button>
             </div>
           </div>
           <div className="h-[500px] rounded-lg overflow-hidden shadow-lg">

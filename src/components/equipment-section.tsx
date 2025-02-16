@@ -1,16 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { PenToolIcon as Tool, Truck, Wrench } from "lucide-react"
+import { PenToolIcon as Tool, Truck, Wrench, Wind } from "lucide-react"
 
 export function EquipmentSection() {
   return (
     <section id="equipment" className="py-16 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Nos Moyens Matériels</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <Truck className="h-8 w-8 text-orange-500" />
+                <Truck className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Flotte de Véhicules</h3>
               <ul className="space-y-2 text-gray-600">
@@ -24,7 +24,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <Tool className="h-8 w-8 text-orange-500" />
+                <Tool className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Équipements</h3>
               <ul className="space-y-2 text-gray-600">
@@ -38,7 +38,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <Wrench className="h-8 w-8 text-orange-500" />
+                <Wrench className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Logistique</h3>
               <ul className="space-y-2 text-gray-600">
@@ -46,6 +46,19 @@ export function EquipmentSection() {
                 <li>Partenaires équipés de grues</li>
                 <li>Gestion des déchets</li>
                 <li>Stockage sécurisé</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="pt-6">
+              <div className="mb-4">
+                <Wind className="h-8 w-8 text-[var(--orange)]" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Machine à souffler</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>Laine de verre</li>
+                <li>Roche</li>
+                <li>Ouate de cellulose</li>
               </ul>
             </CardContent>
           </Card>
