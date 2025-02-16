@@ -10,9 +10,7 @@ export function SiteFooter() {
             <img
               src="/images/logo2.png"
               alt="LEGAL Logo"
-              width={150}
-              height={150}
-              className="bg-white p-4 rounded-lg mb-4"
+              className="bg-white p-4 rounded-lg mb-4 w-[150px] h-[150px] object-contain"
             />
             <p className="text-gray-400">Votre spécialiste en plâtrerie, cloisons sèches et isolation depuis 1990</p>
           </div>

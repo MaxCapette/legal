@@ -18,9 +18,7 @@ export function HeroSection() {
           <img
             src="/images/logo2.png"
             alt="LEGAL Logo"
-            width={400}
-            height={400}
-            className="bg-white p-4 rounded-lg"
+            className="bg-white p-4 rounded-lg w-[400px] h-[400px]"
           />
           <div>
             <div className="flex items-center gap-3 mb-2">
