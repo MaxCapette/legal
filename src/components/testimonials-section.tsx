@@ -36,7 +36,7 @@ export function TestimonialsSection() {
               <CardContent className="pt-6">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-orange-400 text-orange-400" />
+                    <Star key={i} className="h-5 w-5 fill-[var(--orange)] text-[var(--orange)]" />
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">{testimonial.content}</p>

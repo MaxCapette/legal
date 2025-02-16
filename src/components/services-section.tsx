@@ -10,7 +10,7 @@ export function ServicesSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <Tool className="h-8 w-8 text-orange-500" />
+                <Tool className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Plâtrerie</h3>
               <p className="text-gray-600">
@@ -22,7 +22,7 @@ export function ServicesSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <Building2 className="h-8 w-8 text-orange-500" />
+                <Building2 className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Cloisons sèches</h3>
               <p className="text-gray-600">
@@ -34,7 +34,7 @@ export function ServicesSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <Shield className="h-8 w-8 text-orange-500" />
+                <Shield className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Isolation</h3>
               <p className="text-gray-600">

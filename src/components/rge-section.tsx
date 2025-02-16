@@ -1,10 +1,11 @@
-import Image from "next/image"
+/* eslint-disable @next/next/no-img-element */
 import { Card, CardContent } from "@/components/ui/card"
 import { PiggyBank, Shield } from "lucide-react"
+import Link from "next/link"
 
 export function RGESection() {
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -37,13 +38,15 @@ export function RGESection() {
           </div>
           <div className="relative">
             <div className="relative h-[400px] flex items-center justify-center">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rgequalibat-cZcUeapiKeWifbMXpeUEgFyIgrkDHv.png"
-                alt="Certification RGE Qualibat"
-                width={400}
-                height={400}
-                className="object-contain"
-              />
+              <Link href="/documents/Certificat QUALIBAT 2025.pdf" target="_blank">
+                <img
+                  src="/images/rgequalibat.png"
+                  alt="Certification RGE Qualibat"
+                  width={400}
+                  height={400}
+                  className="object-contain"
+                />
+              </Link>
             </div>
           </div>
         </div>
