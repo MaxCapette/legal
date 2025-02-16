@@ -1,7 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Mail, MapPin, Phone, Users } from "lucide-react"
+import  Contact  from "@/components/contact/contact"
+import { useState } from "react"
 
 export function ContactSection() {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <section id="contact" className="py-16 bg-gray-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +34,7 @@ export function ContactSection() {
                 <MapPin className="h-6 w-6 text-[var(--orange)]" />
                 <div>
                   <p className="font-semibold">Adresse</p>
-                  <p>14 Rue de l'Abbé Orain</p>
+                  <p>14 Rue de l&apos;Abbé Orain</p>
                   <p>44590 DERVAL</p>
                 </div>
               </div>
@@ -43,10 +49,21 @@ export function ContactSection() {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold mb-6">Demande de devis</h3>
               <p className="text-gray-600 mb-4">
-                Contactez-nous pour toute demande de devis ou d'information. Notre équipe vous répondra dans les plus
+                Contactez-nous pour toute demande de devis ou d&apos;information. Notre équipe vous répondra dans les plus
                 brefs délais.
               </p>
-              <Button className="w-full bg-[var(--orange)] hover:bg-orange-600">Demander un devis</Button>
+              <Button 
+                className="w-full sm:w-auto bg-[var(--orange)] hover:bg-orange-600"
+                onClick={() => setShowForm(!showForm)}
+              >
+                {showForm ? 'Masquer le formulaire' : 'Demander un devis'}
+              </Button>
+
+              {showForm && (
+                <div className="mt-8 max-w-md mx-auto bg-white p-6 rounded-lg">
+                  <Contact />
+                </div>
+              )}
             </div>
           </div>
           <div className="h-[500px] rounded-lg overflow-hidden shadow-lg">

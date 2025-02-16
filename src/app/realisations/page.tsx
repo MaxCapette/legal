@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // a page qui affiche les réalisations de l'entreprise
 'use client'
 
@@ -11,7 +12,7 @@ export default function RealisationsPage() {
           href="/" 
              className="inline-block px-6 py-2 bg-[var(--orange)] text-white rounded-lg hover:bg-[var(--blueGray)] transition-colors"
         >
-          Retour à l'accueil
+          Retour à l&apos;accueil
         </Link>
   return (
     <>
@@ -20,7 +21,7 @@ export default function RealisationsPage() {
           href="/" 
              className="inline-block px-6 py-2 bg-[var(--orange)] text-white rounded-lg hover:bg-[var(--blueGray)] transition-colors"
         >
-          Retour à l'accueil
+          Retour à l&apos;accueil
         </Link>
       </div>
       
@@ -33,8 +34,7 @@ export default function RealisationsPage() {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div className="flex h-full flex-col justify-end p-6 text-white">
@@ -53,7 +53,7 @@ export default function RealisationsPage() {
           href="/" 
           className="inline-block px-6 py-2 bg-[var(--orange)] text-white rounded-lg hover:bg-[var(--blueGray)] transition-colors"
         >
-          Retour à l'accueil
+          Retour à l&apos;accueil
         </Link>
       </div>
       <SiteFooter />
