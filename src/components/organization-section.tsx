@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export function OrganizationSection() {
   return (
-    <section id="organization" className="py-16 bg-gray-50 scroll-mt-20">
+    <section id="organization" className="py-16 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Notre Organisation</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

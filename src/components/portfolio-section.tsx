@@ -217,12 +217,21 @@ export function PortfolioSection() {
               <div className="space-y-4">
                 <div className="relative h-80">
                   {image.srcBefore && image.srcAfter ? (
-                    <img
-                      src={showingAfter[index] ? image.srcAfter : image.srcBefore}
-                      alt={image.alt}
-                      className="w-full h-full object-cover rounded-lg cursor-pointer transition-all duration-300"
+                    <div 
+                      className="group relative h-full cursor-pointer"
                       onClick={() => toggleImage(index)}
-                    />
+                    >
+                      <img
+                        src={showingAfter[index] ? image.srcAfter : image.srcBefore}
+                        alt={image.alt}
+                        className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:brightness-90"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
+                          Cliquez pour voir {showingAfter[index] ? 'l\'avant' : 'l\'après'}
+                        </div>
+                      </div>
+                    </div>
                   ) : image.src && (
                     <img
                       src={image.src}

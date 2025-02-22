@@ -4,7 +4,7 @@ import { PenToolIcon as Tool, Truck, Wrench, Wind } from "lucide-react"
 
 export function EquipmentSection() {
   return (
-    <section id="equipment" className="py-16 scroll-mt-20">
+    <section id="equipment" className="py-16 scroll-mt-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Nos Moyens Matériels</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -56,7 +56,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <img src="/images/machine_souffler.jpg" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
+                <img src="/images/souffle.webp" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wind className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Machine à souffler</h3>

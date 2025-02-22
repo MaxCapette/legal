@@ -11,11 +11,11 @@ export function HeroSection() {
         />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center gap-6 ">
+        <div className="flex items-center justify-center gap-6">
           <img
             src="/images/Logo2.png"
             alt="LEGAL Logo"
-            className="bg-white p-4 rounded-lg w-[400px] aspect-square"
+            className="bg-white p-6 rounded-xl w-[500px] aspect-square shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </div>
       </div>

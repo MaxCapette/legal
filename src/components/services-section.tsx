@@ -3,7 +3,7 @@ import { Building2, PenToolIcon as Tool, Shield } from "lucide-react"
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-16 bg-gray-50 scroll-mt-20">
+    <section id="services" className="py-16 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Nos Domaines d&apos;Expertise</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
