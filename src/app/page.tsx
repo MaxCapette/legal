@@ -12,17 +12,19 @@ import { PortfolioSection } from "@/components/portfolio-section"
 import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
 import { EffySection } from "@/components/effy-section"
+import { ExpertiseSection } from "@/components/expertise-section"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <MainNav />
       <HeroSection />
-      <RGESection />
       <AboutSection />
+      <RGESection />
       <ServicesSection />
       <MarketsSection />
       <OrganizationSection />
       <EquipmentSection />
+      <ExpertiseSection />
       <EffySection />
       <EcologySection />
       <TestimonialsSection />

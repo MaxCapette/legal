@@ -21,11 +21,14 @@ export function AboutSection() {
                 Notre équipe de professionnels qualifiés met son expertise au service de vos projets, garantissant une
                 réalisation dans les règles de l&apos;art et un respect strict des délais.
               </p>
+              <p>
+                Nous prenons en compte vos problématiques de coupe-feu, d&apos;acoustique et d&apos;esthétique.
+              </p>
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <img
-              src="/images/homephoto.png"
+              src="/images/projects/20230622_100217.JPG"
               alt="Réalisation intérieure"
               className="w-full h-full object-cover"
             />

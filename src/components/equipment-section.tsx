@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card, CardContent } from "@/components/ui/card"
 import { PenToolIcon as Tool, Truck, Wrench, Wind } from "lucide-react"
 
@@ -10,6 +11,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
+                <img src="/images/homephoto.png" alt="Flotte de véhicules" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Truck className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Flotte de Véhicules</h3>
@@ -24,6 +26,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
+                <img src="/images/projects/tour-9-m.png" alt="Tour de 9m²" className="w-full h-32 object-cover object-top rounded-lg mb-4" />
                 <Tool className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Équipements</h3>
@@ -38,6 +41,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
+                <img src="/images/projects/grutage.JPG" alt="Grutage" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wrench className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Logistique</h3>
@@ -52,6 +56,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
+                <img src="/images/machine_souffler.jpg" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wind className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Machine à souffler</h3>

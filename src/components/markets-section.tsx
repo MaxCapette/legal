@@ -20,7 +20,7 @@ export function MarketsSection() {
           <div className="text-center p-6 border rounded-lg hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-semibold mb-4">Particuliers</h3>
             <p className="text-gray-600">
-              Accompagnement personnalisé pour vos projets de rénovation et d&apos;amélioration de l&apos;habitat.
+              Accompagnement personnalisé pour vos projets de rénovation et d&apos;amélioration de l&apos;habitat, ainsi que pour le neuf.
             </p>
           </div>
         </div>

@@ -5,9 +5,17 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Link from "next/link"
+import { useState } from "react"
 
 // Array of project images - you'll need to replace these URLs with your actual 27 image URLs
 export const projectImages = [
+  {
+    srcBefore: "/images/projects/plafond acoustique amphi.JPG",
+    srcAfter: "/images/projects/plafond acoustique amphi 2.JPG",
+    alt: "Plafond acoustique amphithéâtre",
+    title: "Plafond acoustique amphithéâtre",
+    description: "Traitement acoustique spécifique pour amphithéâtre avec systèmes de correction sonore adaptés aux grands volumes."
+  },
   {
     src: "/images/projects/20230622_100430.JPG",
     alt: "Réalisation amphithéâtre",
@@ -30,13 +38,13 @@ export const projectImages = [
     src: "/images/projects/cloisons fermacell 98 et chassis.JPG",
     alt: "Cloisons fermacell 98 et chassis",
     title: "Clôture de chantier",
-    description: "Clôture de chantier pour un chantier de rénovation de bâtiment."
+    description: " Cloisons de distribution double peau de Fermacell, matériau biosourcé avec des caractéristiques coupe feu importantes."
   },
   {
     src: "/images/projects/chassis vitré intérieur.JPG",
     alt: "Chassis vitré intérieur",
     title: "Chassis vitré intérieur",
-    description: "Chassis vitré intérieur pour un chantier de rénovation de bâtiment."
+    description: "Possibilité de mettre en œuvre des châssis PVC pour séparer des bureaux de locaux non chauffés."
   },
   {
     src: "/images/projects/doublages et cloisons acoustiques fermacell.JPG",
@@ -46,14 +54,14 @@ export const projectImages = [
   },
   {
     src: "/images/projects/doublages et cloisosn placo.JPG",
-    alt: "doublages et cloisons placo",
-    title: "Doublages et cloisons Placo",
+    alt: "doublages et cloisons plaques de plâtre",
+    title: "Doublages et cloisons plaques de plâtre",
     description: "Réalisation de doublages et cloisons en plaques de plâtre offrant une finition impeccable et une isolation thermique optimale."
   },
   {
     src: "/images/projects/doublages et plafond placo.JPG",
-    alt: "doublages et plafond placo",
-    title: "Doublages et plafond Placo",
+    alt: "doublages et plafond plaques de plâtre",
+    title: "Doublages et plafond plaques de plâtreo",
     description: "Solution complète d'aménagement intérieur associant doublages muraux et plafonds pour une harmonie parfaite des espaces."
   },
   {
@@ -88,9 +96,9 @@ export const projectImages = [
   },
   {
     src: "/images/projects/membrane rampant contre chevronnage 2.JPG",
-    alt: "membrane rampant contre chevronnage 2",
-    title: "Membrane rampant contre chevronnage",
-    description: "Membrane rampant contre chevronnage pour un chantier de rénovation de bâtiment."
+    alt: "Isolation de combles aménagés",
+    title: "Isolation de combles aménagés",
+    description: "Mise en place de l'isolation biosourcée, d'un contre chevronnage et d'une membrane hygrorégulante avant le ferraillage qui recevra le parement en BA13 pour les plafonds rampants et plafonds horizontaux."
   },
   {
     src: "/images/projects/membrane rampant contre chevronnage.JPG",
@@ -117,18 +125,6 @@ export const projectImages = [
     description: "Aménagement de plafonds avec intégration de verrières, conjuguant apport de lumière naturelle et isolation thermique."
   },
   {
-    src: "/images/projects/plafond acoustique amphi 2.JPG",
-    alt: "plafond acoustique amphi 2",
-    title: "Plafond acoustique amphi",
-    description: "Plafond acoustique amphi pour un chantier de rénovation de bâtiment."
-  },
-  {
-    src: "/images/projects/plafond acoustique amphi.JPG",
-    alt: "plafond acoustique amphi",
-    title: "Plafond acoustique amphithéâtre",
-    description: "Traitement acoustique spécifique pour amphithéâtre avec systèmes de correction sonore adaptés aux grands volumes."
-  },
-  {
     src: "/images/projects/plafond acoustique.JPG",
     alt: "plafond acoustique",
     title: "Plafond acoustique",
@@ -136,8 +132,8 @@ export const projectImages = [
   },
   {
     src: "/images/projects/plafond dalles organic et doublages acoustiques.JPG",
-    alt: "plafond dalles organic et doublages acoustiques",
-    title: "Plafond dalles organic",
+    alt: "plafond dalles fibre de bois et doublages acoustiques",
+    title: "Plafond dalles fibre de bois",
     description: "Installation de dalles organiques design combinées à des doublages acoustiques pour un rendu esthétique et performant."
   },
   {
@@ -160,7 +156,7 @@ export const projectImages = [
   },
   {
     src: "/images/projects/plafond organic dalles acoustiques chassis vitrés.JPG",
-    alt: "plafond organic dalles acoustiques chassis vitrés",
+    alt: "plafond fibre de bois dalles acoustiques chassis vitrés",
     title: "Plafond design acoustique",
     description: "Association innovante de dalles organiques, systèmes acoustiques et châssis vitrés pour des espaces modernes et confortables."
   },
@@ -168,7 +164,7 @@ export const projectImages = [
     src: "/images/projects/restructuration de locaux existants.JPG",
     alt: "restructuration de locaux existants",
     title: "Restructuration de locaux",
-    description: "Transformation complète d'espaces existants avec optimisation des volumes et mise aux normes techniques actuelles."
+    description: "Intégration de cloisons et verrières pour redessiner vos pièces ou vos bureaux, avoir raccords sur les plafonds existants, en plaques de plâtre ou en plafonds modulaires."
   },
   
   
@@ -199,6 +195,16 @@ export function PortfolioSection() {
     ]
   }
 
+  // Add state to track which images are showing "after" version
+  const [showingAfter, setShowingAfter] = useState<{ [key: number]: boolean }>({});
+
+  const toggleImage = (index: number) => {
+    setShowingAfter(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   return (
     <section id="portfolio" className="py-16 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -210,11 +216,20 @@ export function PortfolioSection() {
             <div key={index} className="px-2">
               <div className="space-y-4">
                 <div className="relative h-80">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
+                  {image.srcBefore && image.srcAfter ? (
+                    <img
+                      src={showingAfter[index] ? image.srcAfter : image.srcBefore}
+                      alt={image.alt}
+                      className="w-full h-full object-cover rounded-lg cursor-pointer transition-all duration-300"
+                      onClick={() => toggleImage(index)}
+                    />
+                  ) : image.src && (
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  )}
                 </div>
                 <h3 className="text-xl font-semibold">{image.title}</h3>
                 <p className="text-gray-600">{image.description}</p>
@@ -226,4 +241,3 @@ export function PortfolioSection() {
     </section>
   )
 }
-
