@@ -56,12 +56,13 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4">
-                <img src="/images/souffle.webp" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
+                <img src="/images/ouate-de-cellulose.jpg" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wind className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Machine à souffler</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>Laine de verre</li>
+                <li>Laine de roche</li>
                 <li>Roche</li>
                 <li>Ouate de cellulose</li>
               </ul>

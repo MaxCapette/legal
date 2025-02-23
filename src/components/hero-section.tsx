@@ -2,10 +2,10 @@
 
 export function HeroSection() {
   return (
-    <header className="relative bg-gray-900 text-white">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#ffb749]/80 to-gray-900/60">
+    <header className="relative bg-gray-900 text-white ">
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 to-[#ffb749]/80">
         <img
-          src="/images/plan.png"
+          src="/images/plan2.png"
           alt="Réalisation bureau moderne"
           className="w-full h-full object-cover mix-blend-overlay"
         />
@@ -15,7 +15,7 @@ export function HeroSection() {
           <img
             src="/images/Logo2.png"
             alt="LEGAL Logo"
-            className="bg-white p-6 rounded-xl w-[500px] aspect-square shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="bg-white p-6 rounded-xl w-[300px] aspect-square shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </div>
       </div>

@@ -67,14 +67,17 @@ export function ContactSection() {
             </div>
           </div>
           <div className="h-[500px] rounded-lg overflow-hidden shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">Notre localisation</h3>
+            <p className="text-gray-600 mb-4">Situé entre Nantes et Rennes</p>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.8876563466897!2d-1.6655163237824707!3d47.66893458529755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f8c89b0f6d10d%3A0x3f1f96c1a89f2c13!2s14%20Rue%20de%20l&#39;Abb%C3%A9%20Orain%2C%2044590%20Derval!5e0!3m2!1sfr!2sfr!4v1708075849407!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d692148.9946738823!2d-2.0161319863369612!3d47.58730582607225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f8c89b0f6d10d%3A0x3f1f96c1a89f2c13!2s14%20Rue%20de%20l'Abb%C3%A9%20Orain%2C%2044590%20Derval!5e0!3m2!1sfr!2sfr!4v1708075849407!5m2!1sfr!2sfr"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Carte montrant Derval situé entre Nantes et Rennes"
             />
           </div>
         </div>
