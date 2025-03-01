@@ -10,11 +10,11 @@ export function EquipmentSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
+              <div className="mb-4 flex flex-col items-center">
                 <img src="/images/homephoto.png" alt="Flotte de véhicules" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Truck className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Flotte de Véhicules</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">Flotte de Véhicules</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>3 fourgons</li>
                 <li>1 camion plateau benne</li>
@@ -25,11 +25,11 @@ export function EquipmentSection() {
           </Card>
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
+              <div className="mb-4 flex flex-col items-center">
                 <img src="/images/projects/tour-9-m.png" alt="Tour de 9m²" className="w-full h-32 object-cover object-top rounded-lg mb-4" />
                 <Tool className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Équipements</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">Équipements</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>Lève plaque</li>
                 <li>Échafaudages mobiles, PIRL</li>
@@ -40,11 +40,11 @@ export function EquipmentSection() {
           </Card>
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
+              <div className="mb-4 flex flex-col items-center">
                 <img src="/images/projects/grutage.JPG" alt="Grutage" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wrench className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Logistique</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">Logistique</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>Approvisionnement optimisé</li>
                 <li>Partenaires équipés de grues</li>
@@ -55,11 +55,11 @@ export function EquipmentSection() {
           </Card>
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
-                <img src="/images/ouate-de-cellulose.jpg" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
+              <div className="mb-4 flex flex-col items-center">
+                <img src="/images/projects/ouate-de-cellulose.jpg" alt="Machine à souffler" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wind className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Machine à souffler</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">Machine à souffler</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>Laine de verre</li>
                 <li>Laine de roche</li>

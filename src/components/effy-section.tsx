@@ -14,17 +14,17 @@ export function EffySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
-              <p className="text-gray-700 leading-relaxed space-y-4">
+              <p className="text-gray-700 leading-relaxed space-y-4 text-justify">
                 Dans le cadre de la rénovation énergétique, nous avons établi un partenariat 
                 stratégique avec EFFY pour accompagner nos clients dans la gestion des aides 
                 financières disponibles.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-700 leading-relaxed mt-4 text-justify">
                 Grâce à cette collaboration, nous facilitons l&apos;accès aux subventions et primes 
                 permettant de financer des travaux de rénovation énergétique, en assurant une 
                 prise en charge complète des démarches administratives.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-700 leading-relaxed mt-4 text-justify">
                 EFFY, reconnu pour son expertise en matière de transition énergétique, nous aide 
                 à optimiser les solutions pour chaque projet, afin de rendre la rénovation plus 
                 accessible et avantageuse pour nos clients.

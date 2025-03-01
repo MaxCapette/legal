@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick-theme.css"
 import Link from "next/link"
 import { useState } from "react"
 
+// Styles pour le carrousel
+import "./portfolio-slider.css"
+
 // Array of project images - you'll need to replace these URLs with your actual 27 image URLs
 export const projectImages = [
   {
@@ -37,8 +40,8 @@ export const projectImages = [
   {
     src: "/images/projects/cloisons fermacell 98 et chassis.JPG",
     alt: "Cloisons fermacell 98 et chassis",
-    title: "Clôture de chantier",
-    description: " Cloisons de distribution double peau de Fermacell, matériau biosourcé avec des caractéristiques coupe feu importantes."
+    title: "Cloisons de distribution Fermacell",
+    description: " Cloisons de distribution double peau de Fermacell, matériau biosourcé avec des caractéristiques coupe feu importantes, intégration de châssis vitrés et huisseries intérieures."
   },
   {
     src: "/images/projects/chassis vitré intérieur.JPG",
@@ -61,8 +64,8 @@ export const projectImages = [
   {
     src: "/images/projects/doublages et plafond placo.JPG",
     alt: "doublages et plafond plaques de plâtre",
-    title: "Doublages et plafond plaques de plâtreo",
-    description: "Solution complète d'aménagement intérieur associant doublages muraux et plafonds pour une harmonie parfaite des espaces."
+    title: "Doublages et plafond plaques de plâtre",
+    description: "Restructuration d'un ancien logement, doublages isolés, plafonds, cloisons et habillages des poteaux et linteaux existants pour un rendu moderne et homogène."
   },
   {
     src: "/images/projects/doublages membrane et ferraillage.JPG",
@@ -83,12 +86,6 @@ export const projectImages = [
     description: "Ferraillage plafond pour un chantier de rénovation de bâtiment."
   },
   {
-    src: "/images/projects/grutage.JPG",
-    alt: "grutage",
-    title: "Grutage",
-    description: "Opération de levage et manutention de matériaux avec des équipements spécialisés pour garantir une installation sécurisée et efficace."
-  },
-  {
     src: "/images/projects/membrane plafond.JPG",
     alt: "membrane plafond",
     title: "Membrane plafond",
@@ -107,13 +104,13 @@ export const projectImages = [
     description: "Pose de membrane pare-vapeur sur rampants avec technique de contre-chevronnage pour une isolation thermique renforcée des combles."
   },
   {
-    src: "/images/projects/ossatures plafonds dalles et placo.JPG",
+    src: "/images/projects/ossatures plafonds dalles.JPG",
     alt: "ossatures plafonds dalles et placo",
     title: "Ossatures plafonds",
     description: "Réalisation d'ossatures métalliques complexes permettant l'intégration de différents types de plafonds techniques et acoustiques."
   },
   {
-    src: "/images/projects/ossatures plafonds dalles.JPG",
+    src: "/images/projects/ossatures plafonds dalles et placo.JPG",
     alt: "ossatures plafonds dalles",
     title: "Ossatures plafonds dalles",
     description: "Mise en place d'ossatures techniques pour plafonds modulaires, permettant une maintenance facilitée et une adaptabilité des espaces."
@@ -121,8 +118,8 @@ export const projectImages = [
   {
     src: "/images/projects/placo plafonds verrières.JPG",
     alt: "placo plafonds verrières",
-    title: "Plafonds verrières",
-    description: "Aménagement de plafonds avec intégration de verrières, conjuguant apport de lumière naturelle et isolation thermique."
+    title: "Restructuration d'espaces de travail",
+    description: "Intégration d'une cloison avec châssis vitrés pour séparer une pièce en deux. La cloison est intégrée dans le plafond modulaire pour garantir une acoustique optimum sans avoir besoin de reprendre la totalité de la surface."
   },
   {
     src: "/images/projects/plafond acoustique.JPG",
@@ -134,7 +131,7 @@ export const projectImages = [
     src: "/images/projects/plafond dalles organic et doublages acoustiques.JPG",
     alt: "plafond dalles fibre de bois et doublages acoustiques",
     title: "Plafond dalles fibre de bois",
-    description: "Installation de dalles organiques design combinées à des doublages acoustiques pour un rendu esthétique et performant."
+    description: "Installation de dalles de plafond acoustiques en fibre de bois, associés à des caissons acoustiques en applique aux mûrs pour un rendu esthétique et performant."
   },
   {
     src: "/images/projects/plafonds acoustiques et doublages placo.JPG",
@@ -145,8 +142,8 @@ export const projectImages = [
   {
     src: "/images/projects/plafonds dalles placo et chassis.JPG",
     alt: "plafonds dalles placo et chassis",
-    title: "Plafonds techniques",
-    description: "Intégration harmonieuse de plafonds en dalles et châssis, alliant fonctionnalité et esthétique contemporaine."
+    title: "Intégration d'une cloison pour séparer 2 espaces de travail",
+    description: "Intégration d'une cloison de séparation avec châssis vitrés et porte pour séparer 2 espaces de travail. Raccords sur les plafonds existants."
   },
   {
     src: "/images/projects/plafonds rampants acoustiques.JPG",
@@ -158,7 +155,7 @@ export const projectImages = [
     src: "/images/projects/plafond organic dalles acoustiques chassis vitrés.JPG",
     alt: "plafond fibre de bois dalles acoustiques chassis vitrés",
     title: "Plafond design acoustique",
-    description: "Association innovante de dalles organiques, systèmes acoustiques et châssis vitrés pour des espaces modernes et confortables."
+    description: "Plafonds en dalles fibre de bois sur oassature apparente T24. Le chauffage en panneaux rayonnant eau chaude est intégré à l'ossature pour un meilleur rendu esthétique."
   },
   {
     src: "/images/projects/restructuration de locaux existants.JPG",
@@ -172,7 +169,6 @@ export const projectImages = [
 
 export function PortfolioSection() {
   const settings = {
-    
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -211,41 +207,43 @@ export function PortfolioSection() {
         <Link href="/realisations">
           <h2 className="text-3xl font-bold text-center mb-12 hover:text-[var(--orange)] hover:underline hover:scale-105 transform transition-all duration-300">Nos Réalisations</h2>
         </Link>
-        <Slider {...settings} className="portfolio-slider">
-          {projectImages.map((image, index) => (
-            <div key={index} className="px-2">
-              <div className="space-y-4">
-                <div className="relative h-80">
-                  {image.srcBefore && image.srcAfter ? (
-                    <div 
-                      className="group relative h-full cursor-pointer"
-                      onClick={() => toggleImage(index)}
-                    >
-                      <img
-                        src={showingAfter[index] ? image.srcAfter : image.srcBefore}
-                        alt={image.alt}
-                        className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:brightness-90"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
-                          Cliquez pour voir {showingAfter[index] ? 'l\'avant' : 'l\'après'}
+        <div className="relative slider-container">
+          <Slider {...settings} className="portfolio-slider">
+            {projectImages.map((image, index) => (
+              <div key={index} className="px-2">
+                <div className="space-y-4">
+                  <div className="relative h-80">
+                    {image.srcBefore && image.srcAfter ? (
+                      <div 
+                        className="group relative h-full cursor-pointer"
+                        onClick={() => toggleImage(index)}
+                      >
+                        <img
+                          src={showingAfter[index] ? image.srcAfter : image.srcBefore}
+                          alt={image.alt}
+                          className="w-full h-full object-cover rounded-lg transition-all duration-300 hover:brightness-90"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
+                            Cliquez pour voir {showingAfter[index] ? 'l\'avant' : 'l\'après'}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ) : image.src && (
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                  )}
+                    ) : image.src && (
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    )}
+                  </div>
+                  <h3 className="text-xl font-semibold text-center">{image.title}</h3>
+                  <p className="text-gray-600 text-justify">{image.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold">{image.title}</h3>
-                <p className="text-gray-600">{image.description}</p>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </section>
   )

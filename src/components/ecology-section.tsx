@@ -12,7 +12,7 @@ export function EcologySection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-sm">
+          <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center">
             <Leaf className="h-8 w-8 text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">Matériaux Écologiques</h3>
             <ul className="space-y-2 text-gray-600">
@@ -21,7 +21,7 @@ export function EcologySection() {
               <li>Produits à faible impact environnemental</li>
             </ul>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm">
+          <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center">
             <Truck className="h-8 w-8 text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">Transport Vert</h3>
             <ul className="space-y-2 text-gray-600">
@@ -30,7 +30,7 @@ export function EcologySection() {
               <li>Optimisation des déplacements</li>
             </ul>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm">
+          <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center">
             <Award className="h-8 w-8 text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">Certifications</h3>
             <ul className="space-y-2 text-gray-600">

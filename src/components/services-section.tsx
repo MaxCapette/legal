@@ -9,11 +9,11 @@ export function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
+              <div className="mb-4 flex justify-center">
                 <Tool className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Plâtrerie</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-4 text-center">Plâtrerie</h3>
+              <p className="text-gray-600 text-justify">
                 Travaux de plâtrerie traditionnelle et moderne, avec une attention particulière portée aux finitions et
                 à la qualité d&apos;exécution.
               </p>
@@ -21,11 +21,11 @@ export function ServicesSection() {
           </Card>
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
+              <div className="mb-4 flex justify-center">
                 <Building2 className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Cloisons sèches</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-4 text-center">Cloisons sèches</h3>
+              <p className="text-gray-600 text-justify">
                 Installation de cloisons en plaques de plâtre standards et techniques, adaptées à tous types de
                 configurations et exigences.
               </p>
@@ -33,11 +33,11 @@ export function ServicesSection() {
           </Card>
           <Card>
             <CardContent className="pt-6">
-              <div className="mb-4">
+              <div className="mb-4 flex justify-center">
                 <Shield className="h-8 w-8 text-[var(--orange)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Isolation</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-4 text-center">Isolation</h3>
+              <p className="text-gray-600 text-justify">
                 Solutions complètes d&apos;isolation thermique et acoustique, incluant l&apos;isolation des combles par soufflage
                 et les solutions biosourcées.
               </p>

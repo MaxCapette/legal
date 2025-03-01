@@ -50,7 +50,7 @@ export function MainNav() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-transparent",
+        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-[var(--blueGray)]",
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +74,7 @@ export function MainNav() {
                 onClick={() => scrollToSection(item.section)}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-[var(--orange)]",
-                  isScrolled ? "text-gray-600" : "text-white",
+                  isScrolled ? "text-gray-600" : "text-gray-200",
                 )}
               >
                 {item.label}
@@ -119,9 +119,8 @@ export function MainNav() {
               onClick={() => scrollToSection("contact")}
               className={cn(
                 "transition-colors",
-                isScrolled
-                  ? "bg-[var(--orange)] hover:bg-orange-600 text-white"
-                  : "bg-white/10 hover:bg-white/20 text-white",
+                  "bg-[var(--orange)] hover:bg-orange-600 text-white"
+                  
               )}
             >
               Nous contacter

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
+import DesignedBy from "./ui/designedBy"
 
 export function SiteFooter() {
   return (
@@ -45,6 +46,7 @@ export function SiteFooter() {
           <p>&copy; {new Date().getFullYear()} LEGAL. Tous droits réservés.</p>
         </div>
       </div>
+      <DesignedBy />
     </footer>
   )
 }

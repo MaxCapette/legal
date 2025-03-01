@@ -6,8 +6,8 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Plus de 30 ans d&apos;expertise</h2>
-            <div className="space-y-4 text-gray-600">
+            <h2 className="text-3xl font-bold mb-6 text-center">Plus de 30 ans d&apos;expertise</h2>
+            <div className="space-y-4 text-gray-600 text-justify">
               <p>
                 Établie depuis 1990, l&apos;entreprise LEGAL s&apos;est forgée une solide réputation dans le domaine de la
                 plâtrerie, des cloisons sèches et de l&apos;isolation. Notre expertise s&apos;étend aussi bien aux marchés publics

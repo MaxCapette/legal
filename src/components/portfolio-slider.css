@@ -1,0 +1,57 @@
+/* Styles pour le slider des réalisations */
+.slider-container {
+  position: relative;
+  padding: 0 60px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: white;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--orange);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: var(--orange);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  font-weight: bold;
+  color: inherit;
+  opacity: 1;
+}
+
+.slick-prev:before {
+  content: '←';
+}
+
+.slick-next:before {
+  content: '→';
+} 
