@@ -10,7 +10,7 @@ export function SiteFooter() {
           <div>
             <img
               src="/images/Logo2.png"
-              alt="LEGAL Logo"
+              alt="Logo de LEGAL Plâtrerie - Entreprise de plâtrerie, cloisons sèches et isolation à Derval depuis 1990"
               className="bg-white p-4 rounded-lg mb-4 w-[150px] h-[150px] object-contain"
             />
             <p className="text-gray-400">Votre spécialiste en plâtrerie, cloisons sèches et isolation depuis 1990</p>

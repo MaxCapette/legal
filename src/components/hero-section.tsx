@@ -6,7 +6,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 to-[#ffb749]/80">
         <img
           src="/images/plan2.png"
-          alt="Réalisation bureau moderne"
+          alt="Plan architectural et réalisation de bureau moderne - LEGAL Plâtrerie spécialiste en isolation et plâtrerie"
           className="w-full h-full object-cover mix-blend-overlay"
         />
       </div>
@@ -14,7 +14,7 @@ export function HeroSection() {
         <div className="flex items-center justify-center gap-6">
           <img
             src="/images/Logo2.png"
-            alt="LEGAL Logo"
+            alt="Logo de l'entreprise LEGAL Plâtrerie - spécialiste en plâtrerie, cloisons sèches et isolation à Derval depuis 1990"
             className="bg-white p-6 rounded-xl w-[300px] aspect-square shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </div>

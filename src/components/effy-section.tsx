@@ -35,7 +35,7 @@ export function EffySection() {
           <div className="relative group">
             <img 
               src="/images/EFFY.jpg" 
-              alt="EFFY" 
+              alt="Certification EFFY - Partenaire de LEGAL Plâtrerie pour la rénovation énergétique et l'isolation thermique des bâtiments" 
               className="w-full h-auto rounded-lg shadow-md group-hover:shadow-xl transition-shadow duration-300"
             />
           </div>

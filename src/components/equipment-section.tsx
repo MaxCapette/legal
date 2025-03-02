@@ -26,7 +26,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4 flex flex-col items-center">
-                <img src="/images/projects/tour-9-m.png" alt="Tour de 9m²" className="w-full h-32 object-cover object-top rounded-lg mb-4" />
+                <img src="/images/projects/tour-9-m.png" alt="Échafaudage mobile professionnel - Tour d'échafaudage de 9m² utilisée par LEGAL Plâtrerie pour les travaux en hauteur" className="w-full h-32 object-cover object-top rounded-lg mb-4" />
                 <Tool className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-center">Équipements</h3>
@@ -41,7 +41,7 @@ export function EquipmentSection() {
           <Card>
             <CardContent className="pt-6">
               <div className="mb-4 flex flex-col items-center">
-                <img src="/images/projects/grutage.JPG" alt="Grutage" className="w-full h-32 object-cover rounded-lg mb-4" />
+                <img src="/images/projects/grutage.JPG" alt="Opération de grutage pour l'approvisionnement de matériaux sur un chantier LEGAL Plâtrerie - Logistique optimisée" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Wrench className="h-8 w-8 text-[var(--orange)]" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-center">Logistique</h3>

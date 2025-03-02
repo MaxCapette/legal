@@ -75,19 +75,19 @@ export const projectImages = [
   },
   {
     src: "/images/projects/ferraillage cloison 72.JPG",
-    alt: "ferraillage cloison",
+    alt: "Structure métallique pour cloison de plâtrerie, montants espacés de 72 cm",
     title: "Ferraillage cloison",
     description: "Ferraillage cloison pour un chantier de rénovation de bâtiment."
   },
   {
     src: "/images/projects/ferraillage plafond.JPG",
-    alt: "ferraillage plafond",
+    alt: "Structure métallique pour plafond suspendu en plaques de plâtre",
     title: "Ferraillage plafond",
     description: "Ferraillage plafond pour un chantier de rénovation de bâtiment."
   },
   {
     src: "/images/projects/membrane plafond.JPG",
-    alt: "membrane plafond",
+    alt: "Membrane d'étanchéité à l'air et pare-vapeur pour plafond avant pose de plaques de plâtre",
     title: "Membrane plafond",
     description: "Installation de membranes techniques assurant l'étanchéité à l'air et la régulation hygrométrique pour un confort optimal."
   },
@@ -123,7 +123,7 @@ export const projectImages = [
   },
   {
     src: "/images/projects/plafond acoustique.JPG",
-    alt: "plafond acoustique",
+    alt: "Plafond avec dalles acoustiques pour une meilleure isolation phonique et correction acoustique",
     title: "Plafond acoustique",
     description: "Plafond acoustique pour un chantier de rénovation de bâtiment."
   },

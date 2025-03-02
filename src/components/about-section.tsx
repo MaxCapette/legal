@@ -29,7 +29,7 @@ export function AboutSection() {
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <img
               src="/images/projects/20230622_100217.JPG"
-              alt="Réalisation intérieure"
+              alt="Réalisation intérieure par LEGAL Plâtrerie - Exemple de travaux de plâtrerie et d'isolation de haute qualité réalisés par notre équipe d'experts"
               className="w-full h-full object-cover"
             />
           </div>

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Mentions Légales & Politique de Confidentialité | LEGAL Plâtrerie",
+  description: "Mentions légales et politique de confidentialité de l'entreprise LEGAL, plâtrier plaquiste à Derval. Informations sur l'éditeur du site et conditions d'utilisation.",
+  keywords: "mentions légales, politique de confidentialité, LEGAL plâtrerie, RGPD, Derval",
+}
+
 export default function LegalPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
